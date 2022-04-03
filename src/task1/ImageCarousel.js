@@ -9,12 +9,9 @@ const ImageCarousel = (props) => {
   const [images, setImages] = useState();
   const [imageIndex, setImagesIndex] = useState(0);
 
-  useEffect(
-    (async () => {
-      setImages(await fetchImageUrls());
-    })(),
-    []
-  );
+  useEffect(async () => {
+    setImages(await fetchImageUrls());
+  }, []);
   console.log(images);
   const fetchImages = () => {
     return images ? (
