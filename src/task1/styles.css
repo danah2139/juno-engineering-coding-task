@@ -1,4 +1,19 @@
 .App {
-    font-family: sans-serif;
-    text-align: center;
+  font-family: sans-serif;
+  text-align: center;
+}
+.image {
+  width: 200px;
+  height: 200px;
+}
+.indicators {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  display: flex;
+}
+
+.indicators > button {
+  margin: 5px;
 }
